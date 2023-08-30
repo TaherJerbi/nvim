@@ -6,4 +6,9 @@ lsp.on_attach(function(_, bufnr)
   lsp.default_keymaps({buffer = bufnr})
 end)
 
+
+-- Keybindings
+vim.keymap.set('n', '<leader>ca', ':CodeActionMenu<CR>')
+vim.keymap.set('n', '<leader>rn', ':lua vim.lsp.buf.rename()<CR>')
+
 lsp.setup()

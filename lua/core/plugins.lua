@@ -18,7 +18,12 @@ local plugins = {
     dependencies = { 'nvim-lua/plenary.nvim' }
   },
   -- Color scheme
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  -- { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  {
+    'projekt0n/github-nvim-theme',
+    lazy = false,
+    priority = 1000,
+  },
   -- Lsp ( All in one with lsp-zero )
   {
     'VonHeikemen/lsp-zero.nvim',
@@ -37,6 +42,15 @@ local plugins = {
   },
   "github/copilot.vim",
   "tpope/vim-fugitive",
+  {
+    'weilbith/nvim-code-action-menu',
+    cmd = 'CodeActionMenu',
+  },
+  {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+  }
 }
 
 local opts = {}

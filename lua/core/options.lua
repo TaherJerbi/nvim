@@ -16,5 +16,6 @@ vim.opt.expandtab = true
 
 vim.cmd [[ set noswapfile ]]
 
---Line numbers
-vim.wo.number = true
+-- Relative line numbers
+vim.opt.number = true
+vim.opt.relativenumber = true
