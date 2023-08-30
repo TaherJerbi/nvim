@@ -19,3 +19,6 @@ vim.cmd [[ set noswapfile ]]
 -- Relative line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
+
+-- split below
+vim.opt.splitbelow = true
