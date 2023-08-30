@@ -36,6 +36,7 @@ local plugins = {
     }
   },
   "github/copilot.vim",
+  "tpope/vim-fugitive",
 }
 
 local opts = {}
